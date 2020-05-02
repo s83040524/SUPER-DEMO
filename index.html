@@ -1,12 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Willy</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <script src="js/function.js"></script>
+
 </head>
+
 <body>
-    哈哈哈哈哈
-    哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈
+    <div class="menu">
+        <div class="menu-bar">
+            <div class="logo">
+                <span>Willy</span>
+            </div>
+            <div class="menu-icon">
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+            </div>
+
+
+            <div class="main-menu">
+                <h1>Willy</h1>
+                <div class="contact">
+                    <h3>Get in touch</h3>
+                    <a href="mailto:s83040524@gmail.com" class="mail">s83040524@gmail.com</a>
+                </div>
+                <div class="social">
+                    <a href="#" class="social-item">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-item">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-item">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="intro">
+        <div class="intro-title">
+            <h1>Hello</h1>
+            <p>Here is the tiny little world designed by me. Dive in and feel free to click & scroll.</p>
+            <a href="#" class="social">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+        <div class="intro-img">
+            <h1 class="mask willy">Willy</h1>
+            <h1 class="mask lee">Lee</h1>
+        </div>
+    </div>
+    <div class="profile">
+        <div class="profile-title">
+            <h1 class="Im">I'm</h1>
+            <div class="name">
+                <h1>Willy<br>Li</h1>
+            </div>
+            <div class="sep"></div>
+            <p>A product designer based in Bengaluru focusing on user experience, visual & interaction design.
+                Performing at the fulcrum of aesthetics and sustainability to create meaningful designs that endure.</p>
+        </div>
+        <div class="profile-img">
+            <img src="./image/myPhoto.JPG" class="myPhoto">
+        </div>
+    </div>
+    <div class="project">
+        <div class="project-title">
+            <h1 class="rp">Recent Project</h1>
+            <div class="sep"></div>
+            <h1 class="sectitle">Things I did</h1>
+        </div>
+        <div class="project-items container">
+            <div class="row">
+                <div class="col-xs-12 col-md-12 col-centered">
+
+                    <div id="carousel" class="carousel slide" data-ride="carousel" data-type="multi"
+                        data-interval="2500">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="carousel-col">
+                                    <div class="block img-responsive">
+                                        <a href="https://www.dbnsa.gov.tw">
+                                            <img src="./image/dbnsa.png" class="block dbnsa">
+                                            <span>大鵬灣國家風景區</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-col">
+                                    <div class="block img-responsive">
+                                        <a href="https://www.maolin-nsa.gov.tw">
+                                            <img src="./image/maolin.jpg" class="block maolin">
+                                            <span>茂林國家風景區</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-col">
+                                    <div class="block img-responsive">
+                                        <a href="https://miaolitravel.net/">
+                                            <img src="./image/miaoli.jpg" class="block miaoli">
+                                            <span>苗栗文化觀光旅遊網</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-col">
+                                    <div class="block img-responsive">
+                                        <a href="https://taiwanhotspring.net/">
+                                            <img src="./image/taiwanSpring.jpg" class="block spring">
+                                            <span>台灣好湯網</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <div class="left carousel-control">
+                            <a href="#carousel" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </div>
+                        <div class="right carousel-control">
+                            <a href="#carousel" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 </body>
+
 </html>
