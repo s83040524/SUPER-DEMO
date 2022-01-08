@@ -8,6 +8,10 @@
   font-family: "Arial", "微軟正黑體", sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .intro {
   background-color: black;
   color: white;
@@ -69,7 +73,7 @@
 }
 
 .intro .intro-img {
-  width: 45vw;
+  width: 42vw;
   float: right;
   margin-top: 2vw;
   overflow: hidden;
@@ -80,7 +84,6 @@
   overflow: hidden;
   /* Background to mask */
   background: url("../image/istockphoto.jpg");
-  background-attachment: fixed;
   background-position: center;
   background-repeat: repeat-x;
   background-size: cover;
@@ -102,8 +105,8 @@
 }
 
 .intro .intro-img .willy {
-  -webkit-transform: rotate(-90deg) translateY(-15vw);
-          transform: rotate(-90deg) translateY(-15vw);
+  -webkit-transform: rotate(-90deg) translateY(-12vw);
+          transform: rotate(-90deg) translateY(-12vw);
   -webkit-animation: animation-W 1s ease-out;
           animation: animation-W 1s ease-out;
   -webkit-animation-fill-mode: forwards;
@@ -394,6 +397,11 @@
   overflow: hidden;
 }
 
+.project .img-responsive img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .menu {
   position: fixed;
   height: 100vh;
@@ -439,6 +447,7 @@
           justify-content: space-between;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  cursor: pointer;
 }
 
 .menu .menu-bar .menu-icon .menu-line {
@@ -592,8 +601,8 @@
             transform: rotate(-90deg) translateY(-15vw) translateX(-100vh);
   }
   100% {
-    -webkit-transform: rotate(-90deg) translateY(-15vw) translateX(-25vh);
-            transform: rotate(-90deg) translateY(-15vw) translateX(-25vh);
+    -webkit-transform: rotate(-90deg) translateY(-15vw) translateX(-22vh);
+            transform: rotate(-90deg) translateY(-15vw) translateX(-22vh);
   }
 }
 
@@ -603,8 +612,8 @@
             transform: rotate(-90deg) translateY(-15vw) translateX(-100vh);
   }
   100% {
-    -webkit-transform: rotate(-90deg) translateY(-15vw) translateX(-25vh);
-            transform: rotate(-90deg) translateY(-15vw) translateX(-25vh);
+    -webkit-transform: rotate(-90deg) translateY(-15vw) translateX(-22vh);
+            transform: rotate(-90deg) translateY(-15vw) translateX(-22vh);
   }
 }
 

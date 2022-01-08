@@ -6,6 +6,10 @@
     font-family: "Arial", "微軟正黑體", sans-serif;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .intro {
     background-color: black;
     color: white;
@@ -57,7 +61,7 @@
         }
     }
     .intro-img {
-        width: 45vw;
+        width: 42vw;
         float: right;
         margin-top: 2vw;
         overflow: hidden;
@@ -68,7 +72,7 @@
 
            /* Background to mask */
             background: url("../image/istockphoto.jpg");
-            background-attachment: fixed;
+            // background-attachment: fixed;
             background-position: center;
             background-repeat: repeat-x;
             background-size: cover;
@@ -95,7 +99,7 @@
 
         .willy{
             
-            transform: rotate(-90deg) translateY(-15vw);
+            transform: rotate(-90deg) translateY(-12vw);
             animation: animation-W 1s ease-out;
             animation-fill-mode: forwards;
         }
@@ -367,6 +371,9 @@
     .img-responsive {
         height: 260px;
         overflow: hidden;
+        img{
+            object-fit: contain;
+        }
     }
 }
 
@@ -401,6 +408,7 @@
             flex-direction: row;
             justify-content: space-between;
             transition: all 0.5s;
+            cursor: pointer;
 
             .menu-line {
                 height: 100%;
@@ -543,7 +551,7 @@
     }
 
     100%{
-        transform: rotate(-90deg) translateY(-15vw) translateX(-25vh);
+        transform: rotate(-90deg) translateY(-15vw) translateX(-22vh);
     }
 }
 
