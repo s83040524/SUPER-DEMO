@@ -12,6 +12,18 @@ body {
   overflow-x: hidden;
 }
 
+ul li {
+  list-style: none;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-30 {
+  width: 30%;
+}
+
 .intro {
   background-color: black;
   color: white;
@@ -465,7 +477,7 @@ body {
   width: 0px;
   height: 100vh;
   position: absolute;
-  top: -2vh;
+  top: 0px;
   left: 50px;
   overflow: hidden;
   display: -webkit-box;
@@ -484,35 +496,53 @@ body {
   opacity: 0;
 }
 
+.menu .menu-bar .main-menu ul {
+  opacity: 0;
+  margin-top: 30vh;
+}
+
+.menu .menu-bar .main-menu ul a {
+  color: black;
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-decoration: none;
+}
+
 .menu .menu-bar .main-menu .contact {
-  margin-top: 50vh;
+  position: absolute;
+  left: 10%;
+  bottom: 5%;
+}
+
+.menu .menu-bar .main-menu .contact .email {
+  margin-top: 20vh;
   margin-bottom: 5vh;
   opacity: 0;
   width: 15vw;
 }
 
-.menu .menu-bar .main-menu .contact h3 {
+.menu .menu-bar .main-menu .contact .email h3 {
   font-size: 16px;
   font-weight: 900;
   letter-spacing: -0.08rem;
   margin-bottom: 0;
-  color: white;
+  color: black;
 }
 
-.menu .menu-bar .main-menu .contact a {
+.menu .menu-bar .main-menu .contact .email a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-weight: 700;
 }
 
-.menu .menu-bar .main-menu .social {
+.menu .menu-bar .main-menu .contact .social {
   width: 15vw;
 }
 
-.menu .menu-bar .main-menu .social .social-item {
+.menu .menu-bar .main-menu .contact .social .social-item {
   width: 30px;
   height: 30px;
-  background: white;
+  background: black;
   border-radius: 50%;
   display: inline-block;
   -webkit-box-align: center;
@@ -523,7 +553,7 @@ body {
   opacity: 0;
 }
 
-.menu .menu-bar .main-menu .social .social-item svg {
+.menu .menu-bar .main-menu .contact .social .social-item svg {
   width: 15px;
   height: 15px;
   position: absolute;
@@ -544,20 +574,38 @@ body {
   opacity: 1;
 }
 
+.menu .menu-bar .main-menu.is-open ul {
+  opacity: 1;
+  margin-top: 30vh;
+}
+
+.menu .menu-bar .main-menu.is-open ul a {
+  color: black;
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-decoration: none;
+}
+
 .menu .menu-bar .main-menu.is-open .contact {
+  position: absolute;
+  left: 10%;
+  bottom: 5%;
+}
+
+.menu .menu-bar .main-menu.is-open .contact .email {
   opacity: 1;
 }
 
-.menu .menu-bar .main-menu.is-open .social-item {
+.menu .menu-bar .main-menu.is-open .contact .social-item {
   background: black;
   opacity: 1;
 }
 
-.menu .menu-bar .main-menu.is-open .social-item:hover {
+.menu .menu-bar .main-menu.is-open .contact .social-item:hover {
   background: white;
 }
 
-.menu .menu-bar .main-menu.is-open .social-item:hover svg {
+.menu .menu-bar .main-menu.is-open .contact .social-item:hover svg {
   color: black;
 }
 
@@ -637,5 +685,167 @@ body {
     -webkit-transform: rotate(-90deg) translateY(15vw) translateX(20vh);
             transform: rotate(-90deg) translateY(15vw) translateX(20vh);
   }
+}
+
+.dbnsa {
+  width: 100%;
+  height: 100vh;
+  background-color: #adf5ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dbnsa .left {
+  text-align: center;
+}
+
+.dbnsa .left h2 {
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.dbnsa .left .link {
+  margin: 0 auto;
+  width: 16vw;
+  height: 3vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: black 2px solid;
+  border-radius: 1.5vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+  color: black;
+  padding-top: 0.3vw;
+  padding-right: 1.5vw;
+  cursor: pointer;
+  -webkit-transition: all 250ms ease-in;
+  transition: all 250ms ease-in;
+}
+
+.dbnsa .left .link a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  font-size: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.dbnsa .left .link span {
+  display: inline-block;
+  width: 3vw;
+  height: 3vw;
+  padding: 7px;
+  position: absolute;
+  right: -2px;
+  top: -2px;
+  border: black 2px solid;
+  border-radius: 1.5vw;
+  -webkit-transition: all 250ms ease-in;
+  transition: all 250ms ease-in;
+}
+
+.dbnsa .left .link:hover {
+  color: white;
+  background-color: black;
+  -webkit-transition: all 250ms ease-in;
+  transition: all 250ms ease-in;
+}
+
+.dbnsa .left .link:hover span {
+  -webkit-transition: all 250ms ease-in;
+  transition: all 250ms ease-in;
+  background-color: white;
+}
+
+.maolin {
+  width: 100%;
+  height: 100vh;
+  background-color: #ff9593;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.maolin .right {
+  text-align: center;
+}
+
+.maolin .right h2 {
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.maolin .right .link {
+  margin: 0 auto;
+  width: 16vw;
+  height: 3vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: black 2px solid;
+  border-radius: 1.5vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+  color: black;
+  padding-top: 0.3vw;
+  padding-right: 1.5vw;
+  cursor: pointer;
+  -webkit-transition: all 250ms ease-in;
+  transition: all 250ms ease-in;
+}
+
+.maolin .right .link a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  font-size: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.maolin .right .link span {
+  display: inline-block;
+  width: 3vw;
+  height: 3vw;
+  padding: 7px;
+  position: absolute;
+  right: -2px;
+  top: -2px;
+  border: black 2px solid;
+  border-radius: 1.5vw;
+  -webkit-transition: all 250ms ease-in;
+  transition: all 250ms ease-in;
+}
+
+.maolin .right .link:hover {
+  color: white;
+  background-color: black;
+  -webkit-transition: all 250ms ease-in;
+  transition: all 250ms ease-in;
+}
+
+.maolin .right .link:hover span {
+  -webkit-transition: all 250ms ease-in;
+  transition: all 250ms ease-in;
+  background-color: white;
 }
 /*# sourceMappingURL=style.css.map */
